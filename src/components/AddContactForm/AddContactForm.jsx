@@ -7,7 +7,7 @@ const AddContactForm = ({ onAddContact }) => {
   const [contacts, setContacts] = useState([]);
 
   const handleAddContact = data => {
-    setContacts(prevContacts => [...prevContacts, data]);
+    setContacts(prevContacts => [...contacts, data]);
   };
 
   const handleSubmit = event => {
